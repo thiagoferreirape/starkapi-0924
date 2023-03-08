@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  api_lumen:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ./app:/var/www/html
+    - ./config/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    networks:
+    - kamikaze-outside
+    ports:
+    - 80:80
+    - 443:443
+    
+networks:
+     kamikaze-outside:
+      external: true
