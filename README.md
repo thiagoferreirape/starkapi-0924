@@ -3,7 +3,7 @@ Simple API application , using StarkAPI Bank
 
 Dentro da pasta da api , haverá os seguintes diretórios com suas responsabilidades. 
 
-• app : aplicação , todo o projeto do Lumen 
+• app : aplicação , todo o projeto do Lumen .
 • config : dentro há uma pasta de configuração do arquivo default do apache ( 000-default.conf ) , fazendo com que nossa API execute em Https . o https é necessário pois o webhook exige um URI Https , para isso gerei para um certificado Let’s Encrypt ( Linux + Certbot + ACME DNS Challenge ) sem ter custo com aquisição de cerificados para proteger a conexão , sem precisar utilizar um certificado self-signed.
 
 ###########################################################
